@@ -4,14 +4,15 @@ OneLaser Support 页面设计初稿，2026-11-12。
 
 本仓库于 2026-11-17 从 `alexli-stack/black-friday` 的 `support/onelaser-support` 分支迁入，源提交为 `1ca4cdec11b35901279931d08faa101c39e1db0f`。
 
-- 页面预览：https://onelaser-support-preview.chirpykookaburra1.chatgpt.site
+- 页面预览：https://alexli-stack.github.io/Konwledge/
 - 当前代码仓库：https://github.com/alexli-stack/Konwledge
 
-预览为已有独立托管版本，仓库提交不会自动触发该预览更新。
+GitHub Pages 发布设置：Deploy from a branch → main → / (root)。发布后仓库提交会触发页面更新。根目录 `index.html` 为预览入口，资源引用 `dist/assets/`；修改页面时同步更新 `dist/index.html` 与根入口。
 
 
 ## 文件
 
+- `index.html`：GitHub Pages 根目录入口。
 - `dist/index.html`：可独立部署的英文预览，包含模拟官网导航和页脚。
 - `dist/assets/`：本地品牌图片、CSS、无依赖 JavaScript。
 - `sections/onelaser-support.liquid`：Shopify OS 2.0 section，使用店铺已有导航和页脚。
